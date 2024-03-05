@@ -1,0 +1,261 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/*Início das configurações da header*/
+p{
+  color:#c65038;
+  text-align: center;
+  font-size: 20px;
+}
+
+h1{
+  color: #c65038;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+header {
+    width: 100%;
+    height: 50px;
+    padding: -1%;
+    box-sizing: border-box;
+    background:#C15123;
+ letter-spacing: 0.4em;
+    text-align: center;
+   
+}
+.brand {
+    width: auto;
+    height: 100%;
+    float: left;
+    margin: 0 0 0 5%;
+	color: #fff9ff;;
+
+  }
+
+.logo{
+    width: 150px;
+    margin-top: 80px;
+    margin-left: -250px;
+  }
+/*Início das configurações da Navigation*/
+.menutxt {
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+.menutxt ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.menutxt ul a {
+    width: 20%;
+    height: inherit;
+    color:  #f8f8f8;
+    display: inline-block;
+	
+}
+.menutxt ul a:hover {
+	font-weight: bold;
+    
+}
+#menuToggle {
+    display: none;
+}
+.menu-toggle {
+    display: none;
+}
+/*Início das configurações da Navigation com dispositivos < 768px*/
+@media screen and (max-width: 768px) {
+    .menutxt {
+        width: 100%;
+        height: auto;
+    }
+    .menutxt ul {
+        display: block;
+        max-height: 0;
+    	overflow: hidden;
+    	-webkit-transition: max-height 0.3s;
+    	-moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+    	transition: max-height 0.3s;
+        /*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
+        /*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
+    }
+    .menutxt ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #f1c40f;
+        padding: 10px 0px 10px 5%;
+    }
+    .menu-toggle {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+        /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+}
+
+
+.footerTest{
+    background:#f8f8f8;
+    padding: 15px 0 15px 0;
+    
+  }
+  
+  .footerWrap{
+    
+    margin-left: 33%;
+    width: 600px; 
+    padding: 5px 0 5px 25px;
+    
+  }
+  
+  .toe{
+    overflow: hidden;
+    display: inline-block;
+    width: 160px;
+    margin: 0 17px 17px 0;
+    font-size: 10pt;
+    line-height: 1.6em;
+    vertical-align: top;
+  }
+  
+  .toe a{
+    display: block;
+    text-decoration: none;
+    color:  #c65038;
+  }
+  
+  .toe a:hover{
+    text-decoration: underline;
+    font-weight: bold
+  }
+  
+  .toe h3{
+    color:  #c65038;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15pt;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: bold
+  }
+  
+  #legal{
+    width: 100%;
+    text-align: center;
+    color:  #f8f8f8;
+    background: #C15123;
+    font-size: 9pt;
+    line-height: 1.6em;
+    padding: 17px 0 17px 0;
+    margin: auto;
+    
+  }
+  
+  #social a{
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    margin: 0 3px 3px 0;
+  }
+  
+  #fb{
+    background: url("https://imgur.com/fCRgp42.png") 0 0 no-repeat;
+  }
+  
+  #twitter{
+    background: url("https://imgur.com/fCRgp42.png") -29px 0 no-repeat;
+    border-radius: 4px;  
+  }
+  
+  #instagram{
+    background: url("https://imgur.com/fCRgp42.png") -146px 0 no-repeat;
+  }
+  
+
+  .slideshow-container {
+    
+    width: 100%;
+    position: relative;
+   
+}
+.slideshow {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 150%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.1s ease;
+    border-radius: 0 3px 3px 0;
+    
+}
+.next {
+    right: 10%;
+    border-radius: 3px 0 0 3px;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*960PX BREAKPOINT - Ajustando o texto para desktop*/
+@media (min-width:60em){
+    .legenda   { font-size:2em; padding:8px; }
+    .paginacao { margin:20px 0; }
+    .dot       { width:18px; height:18px; }
+}

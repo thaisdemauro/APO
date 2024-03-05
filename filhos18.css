@@ -1,0 +1,118 @@
+@font-face {
+	font-family: "Quicksand";
+	src: url("Quicksand-VariableFont_wght.ttf") format("ttf");
+}
+
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+
+body{
+  background:#fff9ff;
+}
+
+
+td{
+  text-align: center;
+  margin-right: -40px;
+  margin-left: -40px;
+  height: 0%;
+  font-size: 20px;
+  color:#C15123;
+}
+
+
+img{
+  margin-top: 70px ;
+}
+.btn-3 {
+	background:#fff9ff;
+  background: linear-gradient(0deg,rgb(245, 233, 210));
+	width: 300px;
+	height: 45px;
+	line-height: 42px;
+	padding: 0;
+	border: none;
+  margin-left: 42%;
+  font-size: 20px;
+  color:#C15123;
+	
+  }
+  .btn-3 span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .btn-3:before,
+  .btn-3:after {
+	position: absolute;
+	content: "";
+	right: 0;
+	top: 0;
+	 background: #C15123;
+   	transition: all 0.3s ease;
+  }
+
+  .btn-3:before {
+	height: 0%;
+	width: 2px;
+  }
+  .btn-3:after {
+	width: 0%;
+	height: 2px;
+  }
+  .btn-3:hover{
+	 background: transparent;
+	box-shadow: none;
+  }
+  .btn-3:hover:before {
+	height: 100%;
+  }
+  .btn-3:hover:after {
+	width: 100%;
+  }
+  .btn-3 span:hover{
+	 color: #C15123;
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	 background:#C15123;
+	transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+	width: 2px;
+	height: 0%;
+  }
+  .btn-3 span:after {
+	width: 0%;
+	height: 2px;
+  }
+  .btn-3 span:hover:before {
+	height: 100%;
+  }
+  .btn-3 span:hover:after {
+	width: 100%;
+  }
+
+
+header
+{
+    width: 100%;
+    height: 50px;
+    padding: -1%;
+    box-sizing: border-box;
+    background:#C15123;
+    color: #f8f8f8;
+    font-family: sans-serif;
+    font-size: 38px;
+    letter-spacing: 0.4em;
+    text-align: center;
+    font-weight: bold;
+}
+

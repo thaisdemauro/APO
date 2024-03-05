@@ -1,0 +1,122 @@
+ 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu dropdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav nav navbar bg-dark navbar-expand>
+    <nav class="dp-menu">
+        <ul>
+            <li><a href="#">Projetos</a>
+              <ul>
+                <li><a href="https://github.com/thaisdemauro/devfinance">Dev Finance</a></li>
+                <li><a href="https://github.com/thaisdemauro/entrecontato">Entre em contato</a></li>
+                <li><a href="https://github.com/thaisdemauro/projeto2">Cadastre seu veículo</a></li>
+                <li><a href="https://github.com/thaisdemauro/projeto3">Agência X</a></li>
+                <li><a href="https://github.com/thaisdemauro/entrecontato">Entre em contato</a></li>
+            </ul>
+        </li>
+            </li>
+            <li><a href="#">Cursos com Certificados</a>
+                <ul>
+                    <li><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-991e219e-6327-4992-b681-73c1f5c7cd8f.pdf">Algoritimos e Lóica I</a></li>
+                    <li><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-d91a2da1-c8cc-4412-844d-3a9a2487aaf0.pdf">Métodos ágeis de A a Z: O curso completo</a></li>
+                    <li><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-f18fffff-62e6-46f3-ae56-7cc9996c06a3.pdf">HTML e CSS: O início</a></li>
+                    <li><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-ca63ac06-0992-4e19-bd72-cb769f76d5b7.pdf">Git e GitHub do básico ao avançado</a></li>
+                    <li><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-b55aeafc-504a-4c85-aaf0-52c65a80db33.pdf">React Completo do básico ao avançado</a></li>
+                  <li><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-df12e6ef-8b9a-4c54-aec2-3d60642bf44c.pdf">Lógica de Programação com JavaScript</a></li>
+               
+                  </ul>
+            </li>
+            <li><a href="#">Cursos</a>
+            <ul>
+              <li><a href="https://www.udemy.com/course/criando-site-html-css-e-javascript/">Básico HTML,CSS</a></li>
+              <li><a href="https://www.udemy.com/course/introducao-ao-javascript/">Introdução ao JavaScript</a></li>
+              <li><a href="https://www.udemy.com/course/os-fundamentos-do-javascript-para-iniciantes/">Os fundamentos do JavaScript para iniciantes</a></li>
+              <li><a href="https://www.udemy.com/course/introducao-a-linguagem-css/">Introdução à linguagem CSS</a></li>
+               </ul>   
+        </li>       
+        <li><a href="#">Faculdade</a>
+          <ul>
+            <li><a href="https://descomplica.com.br/faculdade/tecnologia/sistemas-para-internet/">Sistemas para Internet</a></li>
+                           </ul>  
+        </ul>
+    </nav>
+  </nav>
+</body>
+
+</html>
+  </div>
+</nav>
+<br>
+<br>
+
+ </header>
+ <br>
+ <br>
+ <footer>
+ <main class="redes">
+  <span style="color:red">Redes Sociais</span>
+    <a href="#"><span style="color:beige">
+  
+       <main class="contato">
+       <span style="color:red">Fale comigo</span></main>
+       -->
+  </footer>
+
+
+
+
+:root {
+    --cor-fundo: rgb(34, 41, 37);
+    --cor-hover: rgb(118, 180, 145);
+    --cor-primaria: rgb(231, 241, 236);
+}
+
+.dp-menu ul ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul {
+    background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+
+/*sub menu*/
+.dp-menu ul ul  {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul  li:hover  ul {
+    display: block;
+}
+
+.dp-menu ul ul  {
+    width: 150px
+}
+
+.dp-menu ul ul  li a {
+    display: block;
+}

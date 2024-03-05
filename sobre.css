@@ -1,0 +1,101 @@
+
+body {
+  background-color:wheat;
+  color: white;
+  color: #c65038;
+  
+}
+@font-face {
+  font-family: Mulish-VariableFont;
+  src: url(Mulish-VariableFont_wght.ttf);
+}
+
+*{
+  font-family: sans-serif;
+}
+
+
+.titulo-principal{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 10px;
+ 
+
+}
+
+.corpo {
+  width: 960px;
+  
+}
+
+.imagem {
+  
+   float: left;
+   margin-top: -5px;
+   object-fit: cover;  
+  width: 10px;
+  height: 10px;
+}
+
+.texto {
+  display: table-cell;
+  float: left;
+  width: 500px;
+  gap:30px;
+  margin-left:700px;
+  font-size: 30px;
+  margin-top: -500px;
+  color: #c65038;
+  
+}
+
+
+.btn {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 710px;
+  margin-top: 400px;
+  color: #c65038;
+  width: 300px;
+   border: 2px solid transparent;
+  transition: .5s;
+
+
+
+}
+.btn{
+  background:transparent;
+  border-color:  #d84426;
+}
+.btn:hover{
+  color: white;
+  border-color: transparent;
+}
+
+.contato{
+  font-weight:bold;
+  font-size: 50px;
+  text-align: right;
+   width: -100px;
+
+
+}
+
+
+header
+{
+    width: 100%;
+    height: 50px;
+  
+    background:#C15123;
+    color: #f8f8f8;
+     font-size: 38px;
+    letter-spacing: 0.4em;
+    text-align: center;
+    font-weight: bold;
+}
